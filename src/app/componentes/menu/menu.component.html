@@ -1,0 +1,41 @@
+<!-- ======= Header ======= -->
+<header id="header">
+  <div class="d-flex flex-column">
+
+    <a class="nav-link active" aria-current="page" routerLink="/home" *ngIf="isLogged">Home</a>
+
+    <form class="d-flex">
+      <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+      <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+    </form>
+
+    <div class="profile">
+      <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <h1 class="text-light"><a href="index.html">Jésica Álvarez</a></h1>
+      <div class="social-links mt-3 text-center">
+        <a href="https://www.facebook.com/jesica.alvarez" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/jesica.alv93" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+
+    <nav id="navbar" class="nav-menu navbar">
+      <ul>
+        <li><a routerLink="/home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a routerLink="/about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mí</span></a></li>
+        <li><a routerLink="/resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
+            <span>Experiencia</span></a></li>
+        <li><a routerLink="/education" class="nav-link scrollto"><i class="bx bx-book-open"></i>
+              <span>Educación</span></a></li>
+        <li><a routerLink="/skills" class="nav-link scrollto"><i class="bx bx-code-alt"></i>
+                <span>Habilidades</span></a></li>
+        <li><a routerLink="/portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+            <span>Portfolio</span></a></li>
+        <li><a routerLink="/contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a>
+        </li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </div>
+
+</header><!-- End Header -->

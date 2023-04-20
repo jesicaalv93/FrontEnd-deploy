@@ -1,0 +1,34 @@
+{
+    "name": "Jésica Álvarez",
+    "resumen": [{
+        "title": "Desarrollador Full Stack Junior",
+        "information": "Conocimiento de lenguajes de programación de Front End, Back End, APIs y Bases de datos."
+    },
+    {
+        "title": "Neuropsicopedagoga",
+        "information": "Articulación de los conocimientos propios de la neurología, la pedagogía y la psicología para entender y potenciar los procesos de aprendizaje propios de cada individuo."
+    }
+    
+],
+    "education": [{
+        "title": "#YoProgramo - Plan Nacional 'Argentina Programa'",
+        "date": "Junio 2022 - Enero 2023",
+        "school": "Ministerio de Desarrollo Productivo & Cámara Argentina de la Industria de Software (CESSI)"
+    }, 
+    {
+        "title": "#SéProgramar - Plan Nacional 'Argentina Programa'",
+        "date": "Marzo 2022 - Junio 2022",
+        "school": "Ministerio de Desarrollo Productivo & Cámara Argentina de la Industria de Software (CESSI)"
+    },
+    {
+        "title": "CURSO ANUAL DE NEUROPSICOLOGÍA DEL DESARROLLO.",
+        "date": "Julio 2020 - Septiembre 2020",
+        "school": "Centro de Asistencia Docencia e Investigación en Neuropsicología (CADIN)."
+    }
+],
+"login": [{
+     "type": "Bearer",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+}]
+   
+}

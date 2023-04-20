@@ -1,0 +1,65 @@
+<!-- ======= Resume Section ======= -->
+<section id="resume" class="resume">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Resumen</h2>
+    </div>
+    <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+      Nueva experiencia
+    </button>
+    <div class="row">
+      <div class="col-lg-6" data-aos="fade-up">
+        <h3 class="resume-title">Resumen</h3>
+
+        <div class="resume-item pb-0" *ngFor="let Experiencia of expe">
+          <h4>{{Experiencia.nombreE}}</h4>
+          <p><em>{{Experiencia.descripcionE}}</em>
+            <button type="button" class="btn btn-link" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+            <button type="button" class="btn btn-link" (click)="delete(Experiencia.id)" *ngIf="isLogged">
+              <i class="bi bi-trash"></i>
+            </button>
+          </p>
+        </div>
+
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Experiencia Profesional</h3>
+        <div class="resume-item">
+          <h4>Consultorio privado en “Espacio Terapéutico de Rehabilitación” (ES.TE.R.)</h4>
+          <h5>2018 - Presente</h5>
+          <p><em>Devoto, Córdoba, Argentina</em></p>
+          <ul>
+            <li>Valoraciones neurocognitivas e interdisciplinarias.</li>
+            <li>Abordaje psicopedagógico desde la perspectiva del neurodesarrollo.</li>
+            <li>Abordaje Learning Style Profile: Estrategias de intervención para niños con TEA, Trastornos de la
+              Comunicación y del neurodesarrollo.</li>
+            <li>Estimulación neurocogitiva de adultos.</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <h4>Psicopedagoga con orientación Neuroeducativa en Equipo de Orientación Escolar.</h4>
+          <h5>2022 - Presente</h5>
+          <p><em>Devoto, Córdoba, Argentina</em></p>
+          <ul>
+            <li>Encuentros periódicos individuales y colectivos con los estudiantes a fin de conocer sus intereses y
+              desempeño en el proceso de aprendizaje.</li>
+            <li>Intervención frente a los desafíos académicos del estudiante, conociendo oportunamente el origen de
+              estos y brindando estrategias acordes.</li>
+            <li>Elaboración e implementación de Talleres con diferentes fines sociales, emocionales y pedagógicos.</li>
+            <li>Orientación a docentes sobre estrategias didácticas y neuroeducativas para favorecer el aprendizaje en
+              el aula.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="documento.pdf" download="mi-archivo.pdf">Descargar CV</a>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Resume Section -->
