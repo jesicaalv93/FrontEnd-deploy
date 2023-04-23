@@ -9,8 +9,8 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'http://localhost:8080/auth/'
-  // authURL = 'https://backend-argprograma-1wpj.onrender.com/auth/';
+  // authURL = 'http://localhost:8080/auth/'
+  authURL = 'https://backend-argprograma-1wpj.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
