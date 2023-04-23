@@ -8,8 +8,8 @@ import { Skill } from '../model/skills';
 })
 export class SkillService {
 
-  // skillURL= 'http://localhost:8080/skill/' 
-  skillURL= 'https://backend-argprograma-1wpj.onrender.com/skill/';
+  skillURL= 'http://localhost:8080/skill/' 
+  // skillURL= 'https://backend-argprograma-1wpj.onrender.com/skill/';
 
   constructor(private httpClient: HttpClient) { }
 

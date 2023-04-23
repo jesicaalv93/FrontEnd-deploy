@@ -8,8 +8,8 @@ import { Experiencia } from '../model/experiencia';
 })
 export class SExperienciaService {
 
-  // expURL = 'http://localhost:8080/explab/'
-  expURL= 'https://backend-argprograma-1wpj.onrender.com/explab/'
+  expURL = 'http://localhost:8080/explab/'
+  // expURL= 'https://backend-argprograma-1wpj.onrender.com/explab/'
 
   constructor(private httpClient: HttpClient) { }
 

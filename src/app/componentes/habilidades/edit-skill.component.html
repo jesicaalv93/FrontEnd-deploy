@@ -1,22 +1,32 @@
 <div class="container" *ngIf="skill">
     <div class="row">
-        <div>
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreE">Nombre de la habilidad</label>
-                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="skill.nombre"
-                        required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionE">Porcentaje de la habilidad</label>
-                    <input type="text" class="form-control" id="descripcionE" name="descripcionE"
-                        [(ngModel)]="skill.porcentaje" required>
-                </div>
-                <br>
-                <button class="btn btn-primary">
-                    Actualizar
-                </button>
-            </form>
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <fieldset>
+                        <legend class="text-center header">Editar Habilidad</legend>
+                        <div class="form-group">
+                            <label for="form-group" class="col-sm-2 col-form-label">Nombre</label>
+                            <div class="col-md-8">
+                                <input id="nombre" name="name" type="text" placeholder="Nombre de la habilidad." [(ngModel)]="skill.nombre" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="form-group" class="col-sm-2 col-form-label">Porcentaje</label>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Ingrese un porcentaje de dominio de la habilidad." rows="7" [(ngModel)]="skill.porcentaje"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary">Actualizar</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </div>
 </div>
